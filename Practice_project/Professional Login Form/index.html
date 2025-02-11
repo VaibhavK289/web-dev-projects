@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Login Form</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        div ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav li {
+            scale: 2;
+            margin-top: 20px;
+        }
+
+        .inner-element a {
+            flex: 1;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid;
+        }
+        .dropdown {
+            
+        }
+
+        a:hover, a:focus {
+            background-color: #fff;
+            color: #333;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+            <div class="Nav-bar">
+            <ul>
+                <nav>
+                    <li class="inner-element"><a href="#">Home</a></li>
+                <li class="inner-element"><a href="#">About</a></li>
+                <li class="inner-element"><a href="#">Services</a></li>
+                <li class="inner-element"><a href="#">Contact</a></li>
+                </nav>
+                <li class="More">
+                    <a href="#">More</a>
+                    <div class="Dropdown"> 
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="login-form">
+        <h2>Login to your Account</h2>
+        <form>
+            <div class="Form-group">
+                <label for="username">username/emailId</label>
+                <input type="email" name="username" id="username" placeholder="enter your username">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="enter your password">
+            </div>
+        </form>
+
+        <div class="form-options">
+            <ul>
+                <li><a href="#">Forgot Password</a></li>
+                <li><a href="#">Create Account</a></li>
+            </ul>
+            <button type="submit">login</button>
+        </div>
+    </div>
+</body>
+</html>
